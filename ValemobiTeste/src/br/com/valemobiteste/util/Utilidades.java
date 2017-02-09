@@ -10,7 +10,7 @@ import java.util.regex.Pattern;
 
 public abstract class Utilidades{
 
-	public static final String SCHEMA = "Valemobi";
+	public static final String SCHEMA = "heroku_ce200899fc2742a";
 
 	/**
 	 * Método responsável por converter uma data VÁLIDA do formato

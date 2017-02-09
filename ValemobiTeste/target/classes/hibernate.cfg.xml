@@ -6,8 +6,8 @@
 <hibernate-configuration>
 	<session-factory>
 		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-		<property name="connection.user">root</property>
-		<property name="connection.password"></property>
+		<property name="connection.user">baef603aa56b68</property>
+		<property name="connection.password">61358734</property>
 		<property name="connection.pool_size">31</property>
 		<property name="dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
 		<property name="show_sql">true</property>

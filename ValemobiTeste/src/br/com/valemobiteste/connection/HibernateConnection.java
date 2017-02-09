@@ -12,7 +12,6 @@ import org.hibernate.service.ServiceRegistry;
 import org.hibernate.service.ServiceRegistryBuilder;
 
 import br.com.valemobiteste.exceptions.ApplicationException;
-import br.com.valemobiteste.util.Utilidades;
 
 public final class HibernateConnection< T > {
 
@@ -29,7 +28,7 @@ public final class HibernateConnection< T > {
 	 */
 	static {
 		Configuration configuration = new Configuration().configure( "hibernate.cfg.xml" );
-		configuration.setProperty( "hibernate.connection.url", "jdbc:mysql://localhost/" + Utilidades.SCHEMA + "?createDatabaseIfNotExist=true" );
+		configuration.setProperty( "hibernate.connection.url", "jdbc:mysql://us-cdbr-iron-east-04.cleardb.net/heroku_ce200899fc2742a?reconnect=true" );
 
 		ServiceRegistry serviceRegistry = new ServiceRegistryBuilder().applySettings( configuration.getProperties() ).buildServiceRegistry();
 		SESSION_FACTORY = configuration.buildSessionFactory( serviceRegistry );
